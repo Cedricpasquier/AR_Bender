@@ -12,6 +12,9 @@ public class FaceController : MonoBehaviour
 {
     private ARFaceManager arFaceManager;
 
+    [SerializeField]
+    private Button swapFilter;
+
     private int swapCounter = 0;
 
     [SerializeField]
@@ -25,6 +28,7 @@ public class FaceController : MonoBehaviour
     void Start()
     {
         arFaceManager = GetComponent<ARFaceManager>();
+        swapFilter.onClick.AddListener(SwapeFaces);
         flag = 0;
     }
 
