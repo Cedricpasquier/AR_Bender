@@ -407,15 +407,15 @@ RectTransform:
   m_GameObject: {fileID: 1114040580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.62, y: 0.59, z: 1}
+  m_LocalScale: {x: 0.68, y: 0.76, z: 1}
   m_Children: []
   m_Father: {fileID: 1577749884}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3, y: 0}
+  m_SizeDelta: {x: -6, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114040582
 MonoBehaviour:
@@ -439,18 +439,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 1
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Changer de filtre
+  m_Text: Face Material (FOKS)
 --- !u!222 &1114040583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -604,7 +604,7 @@ RectTransform:
   m_GameObject: {fileID: 1577749883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.02, y: 3.53, z: 1}
+  m_LocalScale: {x: 4.79, y: 4.59, z: 1}
   m_Children:
   - {fileID: 1114040581}
   m_Father: {fileID: 40919618}
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FacePrefab: {fileID: 3090099143275151089, guid: f3c96ccffd6ca474590daa080312c2ca, type: 3}
-  m_MaximumFaceCount: 2
+  m_MaximumFaceCount: 1
 --- !u!114 &2042543219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,8 +787,14 @@ MonoBehaviour:
   swapFilter: {fileID: 1577749885}
   materials:
   - Material: {fileID: 2100000, guid: b53f35babfae70746ab905d38e405472, type: 2}
-    Name: IssamStyle
+    Name: FOKS
   - Material: {fileID: 2100000, guid: 105361951fa46cb43bca6fb15a37c26e, type: 2}
-    Name: debug1
+    Name: Rouge
   - Material: {fileID: 2100000, guid: 5cc5164f1058f4e43887b94d4cd6c77b, type: 2}
-    Name: dabug2
+    Name: Vert
+  - Material: {fileID: 2100000, guid: 7e093b3dd11a6be449c0159ac8e1a928, type: 2}
+    Name: Mauve
+  - Material: {fileID: 2100000, guid: b0deaadba01769a408c0cc4db167474c, type: 2}
+    Name: Blanc
+  - Material: {fileID: 2100000, guid: 91df091a2ac5afa46b49aff15e0967de, type: 2}
+    Name: Bleu

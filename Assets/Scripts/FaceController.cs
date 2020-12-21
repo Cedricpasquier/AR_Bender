@@ -28,6 +28,7 @@ public class FaceController : MonoBehaviour
     void Start()
     {
         arFaceManager = GetComponent<ARFaceManager>();
+        swapFilter.GetComponentInChildren<Text>().text = $"Face Material (FOKS)";
         swapFilter.onClick.AddListener(SwapeFaces);
         flag = 0;
     }
@@ -58,7 +59,9 @@ public class FaceController : MonoBehaviour
         foreach (ARFace face in arFaceManager.trackables)
         {
             face.GetComponent<MeshRenderer>().material = materials[swapCounter].Material;
+            
         }
+        swapFilter.GetComponentInChildren<Text>().text = $"Face Material ({materials[swapCounter].Name})";
     }
 
 
